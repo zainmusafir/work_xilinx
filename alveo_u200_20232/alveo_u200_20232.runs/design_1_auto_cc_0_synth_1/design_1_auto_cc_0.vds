@@ -1,0 +1,382 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Fri Feb 23 11:45:47 2024
+# Process ID: 973785
+# Current directory: /work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.runs/design_1_auto_cc_0_synth_1
+# Command line: vivado -log design_1_auto_cc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_auto_cc_0.tcl
+# Log file: /work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.runs/design_1_auto_cc_0_synth_1/design_1_auto_cc_0.vds
+# Journal file: /work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.runs/design_1_auto_cc_0_synth_1/vivado.jou
+# Running On: n019, OS: Linux, CPU Frequency: 2650.000 MHz, CPU Physical cores: 32, Host memory: 540859 MB
+#-----------------------------------------------------------
+source design_1_auto_cc_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1336.094 ; gain = 35.836 ; free physical = 480081 ; free virtual = 516267
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_cc_0
+Command: synth_design -top design_1_auto_cc_0 -part xcu200-fsgd2104-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu200'
+INFO: [Device 21-403] Loading part xcu200-fsgd2104-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 974062
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2818.184 ; gain = 391.715 ; free physical = 454496 ; free virtual = 490692
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_cc_0' [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/synth/design_1_auto_cc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_clock_converter_v2_1_29_axi_clock_converter' [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ipshared/fac0/hdl/axi_clock_converter_v2_1_vl_rfs.v:650]
+INFO: [Synth 8-6157] synthesizing module 'axi_clock_converter_v2_1_29_axic_sync_clock_converter' [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ipshared/fac0/hdl/axi_clock_converter_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'axi_clock_converter_v2_1_29_axic_sync_clock_converter' (0#1) [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ipshared/fac0/hdl/axi_clock_converter_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6157] synthesizing module 'axi_clock_converter_v2_1_29_axic_sync_clock_converter__parameterized0' [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ipshared/fac0/hdl/axi_clock_converter_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'axi_clock_converter_v2_1_29_axic_sync_clock_converter__parameterized0' (0#1) [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ipshared/fac0/hdl/axi_clock_converter_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6157] synthesizing module 'axi_clock_converter_v2_1_29_axic_sync_clock_converter__parameterized1' [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ipshared/fac0/hdl/axi_clock_converter_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'axi_clock_converter_v2_1_29_axic_sync_clock_converter__parameterized1' (0#1) [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ipshared/fac0/hdl/axi_clock_converter_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6157] synthesizing module 'axi_clock_converter_v2_1_29_axic_sync_clock_converter__parameterized2' [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ipshared/fac0/hdl/axi_clock_converter_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'axi_clock_converter_v2_1_29_axic_sync_clock_converter__parameterized2' (0#1) [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ipshared/fac0/hdl/axi_clock_converter_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6157] synthesizing module 'axi_clock_converter_v2_1_29_axic_sample_cycle_ratio' [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ipshared/fac0/hdl/axi_clock_converter_v2_1_vl_rfs.v:356]
+INFO: [Synth 8-6155] done synthesizing module 'axi_clock_converter_v2_1_29_axic_sample_cycle_ratio' (0#1) [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ipshared/fac0/hdl/axi_clock_converter_v2_1_vl_rfs.v:356]
+INFO: [Synth 8-6155] done synthesizing module 'axi_clock_converter_v2_1_29_axi_clock_converter' (0#1) [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ipshared/fac0/hdl/axi_clock_converter_v2_1_vl_rfs.v:650]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_cc_0' (0#1) [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/synth/design_1_auto_cc_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element gen_sync_clock_converter.m_tstorage_r_reg was removed.  [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ipshared/fac0/hdl/axi_clock_converter_v2_1_vl_rfs.v:220]
+WARNING: [Synth 8-6014] Unused sequential element gen_sync_clock_converter.m_tstorage_r_reg was removed.  [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ipshared/fac0/hdl/axi_clock_converter_v2_1_vl_rfs.v:220]
+WARNING: [Synth 8-6014] Unused sequential element gen_sync_clock_converter.m_tstorage_r_reg was removed.  [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ipshared/fac0/hdl/axi_clock_converter_v2_1_vl_rfs.v:220]
+WARNING: [Synth 8-6014] Unused sequential element gen_sync_clock_converter.m_tstorage_r_reg was removed.  [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ipshared/fac0/hdl/axi_clock_converter_v2_1_vl_rfs.v:220]
+WARNING: [Synth 8-7129] Port SAMPLE_CYCLE in module axi_clock_converter_v2_1_29_axic_sync_clock_converter__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SAMPLE_CYCLE_EARLY in module axi_clock_converter_v2_1_29_axic_sync_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SAMPLE_CYCLE in module axi_clock_converter_v2_1_29_axic_sync_clock_converter__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SAMPLE_CYCLE_EARLY in module axi_clock_converter_v2_1_29_axic_sync_clock_converter__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[3] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[2] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[1] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[3] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[2] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[1] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wlast in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arid[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[7] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[6] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[5] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[4] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[3] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[2] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[1] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[2] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[1] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[1] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlock[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[3] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[2] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[1] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[3] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[2] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[1] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[3] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[2] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[1] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rlast in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 3001.121 ; gain = 574.652 ; free physical = 452970 ; free virtual = 489187
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 3001.121 ; gain = 574.652 ; free physical = 452943 ; free virtual = 489161
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 3001.121 ; gain = 574.652 ; free physical = 452943 ; free virtual = 489161
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3001.121 ; gain = 0.000 ; free physical = 452939 ; free virtual = 489157
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.runs/design_1_auto_cc_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.runs/design_1_auto_cc_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3068.879 ; gain = 0.000 ; free physical = 452412 ; free virtual = 488651
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3068.914 ; gain = 0.000 ; free physical = 452401 ; free virtual = 488636
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 3068.914 ; gain = 642.445 ; free physical = 451953 ; free virtual = 488214
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu200-fsgd2104-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 3068.914 ; gain = 642.445 ; free physical = 451951 ; free virtual = 488212
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.runs/design_1_auto_cc_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 3068.914 ; gain = 642.445 ; free physical = 451949 ; free virtual = 488209
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_sync_clock_converter.state_reg' in module 'axi_clock_converter_v2_1_29_axic_sync_clock_converter'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_sync_clock_converter.state_reg' in module 'axi_clock_converter_v2_1_29_axic_sync_clock_converter__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_sync_clock_converter.state_reg' in module 'axi_clock_converter_v2_1_29_axic_sync_clock_converter__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_sync_clock_converter.state_reg' in module 'axi_clock_converter_v2_1_29_axic_sync_clock_converter__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                               00 |                               00
+                    ZERO |                               01 |                               10
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_sync_clock_converter.state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_29_axic_sync_clock_converter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                               00 |                               00
+                    ZERO |                               01 |                               10
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_sync_clock_converter.state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_29_axic_sync_clock_converter__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                              001 |                               00
+                    ZERO |                              010 |                               10
+                     TWO |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_sync_clock_converter.state_reg' using encoding 'one-hot' in module 'axi_clock_converter_v2_1_29_axic_sync_clock_converter__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                              001 |                               00
+                    ZERO |                              010 |                               10
+                     TWO |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_sync_clock_converter.state_reg' using encoding 'one-hot' in module 'axi_clock_converter_v2_1_29_axic_sync_clock_converter__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3068.914 ; gain = 642.445 ; free physical = 451832 ; free virtual = 488091
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
+	               35 Bit    Registers := 2     
+	               34 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 29    
++---Muxes : 
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 21    
+	   3 Input    2 Bit        Muxes := 8     
+	   6 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 6840 (col length:120)
+BRAMs: 4320 (col length: RAMB18 360 RAMB36 180)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[3] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[2] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[1] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[3] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[2] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[1] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wlast in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arid[0] in module axi_clock_converter_v2_1_29_axi_clock_converter is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3068.914 ; gain = 642.445 ; free physical = 451321 ; free virtual = 487581
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3274.941 ; gain = 848.473 ; free physical = 450242 ; free virtual = 486506
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3294.973 ; gain = 868.504 ; free physical = 450211 ; free virtual = 486475
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3304.996 ; gain = 878.527 ; free physical = 450712 ; free virtual = 486976
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 3304.996 ; gain = 878.527 ; free physical = 450562 ; free virtual = 486824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 3304.996 ; gain = 878.527 ; free physical = 450562 ; free virtual = 486824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 3304.996 ; gain = 878.527 ; free physical = 450559 ; free virtual = 486820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 3304.996 ; gain = 878.527 ; free physical = 450558 ; free virtual = 486819
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 3304.996 ; gain = 878.527 ; free physical = 450557 ; free virtual = 486819
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 3304.996 ; gain = 878.527 ; free physical = 450557 ; free virtual = 486819
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |     4|
+|3     |LUT3 |     1|
+|4     |LUT4 |    10|
+|5     |LUT5 |     8|
+|6     |LUT6 |    10|
+|7     |FDRE |   176|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 3304.996 ; gain = 878.527 ; free physical = 450557 ; free virtual = 486819
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 65 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 3304.996 ; gain = 810.734 ; free physical = 450565 ; free virtual = 486827
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 3305.004 ; gain = 878.527 ; free physical = 450564 ; free virtual = 486826
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3315.965 ; gain = 0.000 ; free physical = 450837 ; free virtual = 487099
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3373.254 ; gain = 0.000 ; free physical = 450936 ; free virtual = 487212
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 42ed605b
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3373.289 ; gain = 1988.383 ; free physical = 450912 ; free virtual = 487210
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2480.697; main = 2447.687; forked = 296.812
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4034.496; main = 3373.258; forked = 965.613
+INFO: [Common 17-1381] The checkpoint '/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.runs/design_1_auto_cc_0_synth_1/design_1_auto_cc_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_auto_cc_0, cache-ID = f26b65c2b1f7bbaa
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+INFO: [Common 17-1381] The checkpoint '/work/zain/Xilinx/alveo_u200_20232/alveo_u200_20232.runs/design_1_auto_cc_0_synth_1/design_1_auto_cc_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_auto_cc_0_utilization_synth.rpt -pb design_1_auto_cc_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 23 11:46:37 2024...
