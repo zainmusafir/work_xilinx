@@ -1,0 +1,81 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.549343",
+   "Default View_TopLeft":"1742,-16",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port ddr4_sdram_c0 -pg 1 -lvl 7 -x 2540 -y 530 -defaultsOSRD
+preplace port default_300mhz_clk0 -pg 1 -lvl 0 -x -30 -y 910 -defaultsOSRD
+preplace port rs232_uart -pg 1 -lvl 7 -x 2540 -y 820 -defaultsOSRD
+preplace port pci_express_x8 -pg 1 -lvl 7 -x 2540 -y 80 -defaultsOSRD
+preplace port pcie_refclk -pg 1 -lvl 0 -x -30 -y -90 -defaultsOSRD
+preplace port spi_rtl -pg 1 -lvl 7 -x 2540 -y 260 -defaultsOSRD
+preplace port port-id_resetn -pg 1 -lvl 0 -x -30 -y 850 -defaultsOSRD
+preplace port port-id_pcie_perstn -pg 1 -lvl 0 -x -30 -y -20 -defaultsOSRD
+preplace inst ddr4_0 -pg 1 -lvl 5 -x 1980 -y 600 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 3 -x 970 -y 190 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 4 -x 1450 -y 100 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 4 -x 1450 -y 660 -defaultsOSRD
+preplace inst microblaze_0_axi_intc -pg 1 -lvl 2 -x 570 -y 420 -defaultsOSRD
+preplace inst microblaze_0_xlconcat -pg 1 -lvl 1 -x 220 -y 430 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 2 -x 570 -y 190 -defaultsOSRD
+preplace inst rst_ddr4_0_100M -pg 1 -lvl 1 -x 220 -y 100 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 5 -x 1980 -y 830 -defaultsOSRD
+preplace inst axi_timer_0 -pg 1 -lvl 5 -x 1980 -y 1000 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 4 -x 1450 -y 290 -defaultsOSRD
+preplace inst rst_ddr4_0_300M -pg 1 -lvl 3 -x 970 -y 690 -defaultsOSRD
+preplace inst resetn_inv_0 -pg 1 -lvl 4 -x 1450 -y 960 -defaultsOSRD
+preplace inst xdma_0 -pg 1 -lvl 5 -x 1980 -y 130 -defaultsOSRD
+preplace inst util_ds_buf -pg 1 -lvl 4 -x 1450 -y -90 -defaultsOSRD
+preplace inst axi_quad_spi_0 -pg 1 -lvl 6 -x 2390 -y 270 -defaultsOSRD
+preplace netloc microblaze_0_intr 1 1 1 NJ 430
+preplace netloc microblaze_0_Clk 1 0 6 30 290 430 290 730 300 1250 1060 1770 740 2260
+preplace netloc rst_ddr4_0_100M_mb_reset 1 1 2 410 270 720
+preplace netloc rst_ddr4_0_100M_bus_struct_reset 1 1 3 NJ 80 NJ 80 1290
+preplace netloc rst_ddr4_0_100M_peripheral_aresetn 1 1 5 420 310 NJ 310 1270 1070 1740 460 2250
+preplace netloc mdm_1_debug_sys_rst 1 0 3 40 260 NJ 260 700
+preplace netloc ddr4_0_c0_ddr4_ui_clk 1 2 4 730 580 1260 1040 1650J 470 2240
+preplace netloc ddr4_0_c0_ddr4_ui_clk_sync_rst 1 0 6 -10 590 NJ 590 700 590 1280J 1050 1620J 730 2180
+preplace netloc rst_ddr4_0_300M_peripheral_aresetn 1 3 2 1230 1080 1760
+preplace netloc resetn_1 1 0 4 NJ 850 NJ 850 NJ 850 1290J
+preplace netloc resetn_inv_0_Res 1 4 1 1750J 640n
+preplace netloc axi_uartlite_0_interrupt 1 0 6 20 0 NJ 0 NJ 0 1220J -10 NJ -10 2210
+preplace netloc axi_timer_0_interrupt 1 0 6 10 -20 NJ -20 NJ -20 NJ -20 NJ -20 2220
+preplace netloc ddr4_0_c0_ddr4_interrupt 1 0 6 0 -160 NJ -160 NJ -160 NJ -160 NJ -160 2190
+preplace netloc xdma_0_axi_aclk 1 3 3 1300 1090 1780 750 2200
+preplace netloc pcie_perstn_1 1 0 5 -10J -10 NJ -10 NJ -10 1210J 10 1610J
+preplace netloc util_ds_buf_IBUF_OUT 1 4 1 1680 -100n
+preplace netloc util_ds_buf_IBUF_DS_ODIV2 1 4 1 1670 -80n
+preplace netloc ddr4_0_C0_DDR4 1 5 2 NJ 530 N
+preplace netloc default_300mhz_clk0_1 1 0 5 NJ 910 NJ 910 NJ 910 1240J 1020 1660J
+preplace netloc microblaze_0_dlmb_1 1 3 1 1210 70n
+preplace netloc microblaze_0_ilmb_1 1 3 1 1220 90n
+preplace netloc microblaze_0_axi_dp 1 3 1 1290 180n
+preplace netloc microblaze_0_interrupt 1 2 1 710 160n
+preplace netloc microblaze_0_intc_axi 1 1 4 440 1030 NJ 1030 NJ 1030 1600
+preplace netloc microblaze_0_debug 1 2 1 N 180
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 4 1 1640 640n
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 4 1 1630 660n
+preplace netloc axi_uartlite_0_UART 1 5 2 NJ 820 N
+preplace netloc microblaze_0_M_AXI_DC 1 3 1 N 220
+preplace netloc axi_smc_M00_AXI 1 4 1 1670 290n
+preplace netloc microblaze_0_M_AXI_IC 1 3 1 N 240
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 4 1 1620 580n
+preplace netloc microblaze_0_M_AXI_IP 1 3 1 1280 200n
+preplace netloc xdma_0_pcie_mgt 1 5 2 NJ 80 N
+preplace netloc pcie_refclk_1 1 0 4 NJ -90 NJ -90 NJ -90 NJ
+preplace netloc xdma_0_M_AXI 1 3 3 1300 0 NJ 0 2180
+preplace netloc microblaze_0_axi_periph_M04_AXI 1 4 2 1610J 450 2230
+preplace netloc axi_quad_spi_0_SPI_0 1 6 1 N 260
+levelinfo -pg 1 -30 220 570 970 1450 1980 2390 2540
+pagesize -pg 1 -db -bbox -sgen -240 -170 2700 1110
+"
+}
+{
+   "da_axi4_cnt":"10",
+   "da_board_cnt":"6",
+   "da_clkrst_cnt":"1",
+   "da_mb_cnt":"1",
+   "da_xdma_cnt":"2"
+}

@@ -1,0 +1,1502 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+
+****** Vivado v2023.2.2 (64-bit)
+  **** SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
+  **** IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+  **** SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1336.766 ; gain = 12.898 ; free physical = 472837 ; free virtual = 512132
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/cm/shared/apps/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+Command: link_design -top design_1_wrapper -part xcu200-fsgd2104-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xcu200-fsgd2104-2-e
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.dcp' for cell 'design_1_i/axi_quad_spi_0'
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.dcp' for cell 'design_1_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0.dcp' for cell 'design_1_i/axi_timer_0'
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.dcp' for cell 'design_1_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/design_1_ddr4_0_0.dcp' for cell 'design_1_i/ddr4_0'
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.dcp' for cell 'design_1_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.dcp' for cell 'design_1_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.dcp' for cell 'design_1_i/microblaze_0_axi_intc'
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_resetn_inv_0_0/design_1_resetn_inv_0_0.dcp' for cell 'design_1_i/resetn_inv_0'
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_rst_ddr4_0_100M_0/design_1_rst_ddr4_0_100M_0.dcp' for cell 'design_1_i/rst_ddr4_0_100M'
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_rst_ddr4_0_300M_0/design_1_rst_ddr4_0_300M_0.dcp' for cell 'design_1_i/rst_ddr4_0_300M'
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1/design_1_util_ds_buf_1.dcp' for cell 'design_1_i/util_ds_buf'
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/design_1_xdma_0_1.dcp' for cell 'design_1_i/xdma_0'
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0.dcp' for cell 'design_1_i/microblaze_0_axi_periph/m03_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2872.977 ; gain = 0.000 ; free physical = 471331 ; free virtual = 510626
+INFO: [Netlist 29-17] Analyzing 4503 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-1115] Found multi-term driver net: design_1_i/util_ds_buf/U0/<const0>.
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: design_1_i/ddr4_0 UUID: 5055ccf3-ab28-5f28-a888-99587c896c7c 
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_b_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:119]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:122]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:131]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:134]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:137]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:143]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:146]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:149]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:155]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:161]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:167]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:171]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:174]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc:178]
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_39/bd_afc3_m00bn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_b_node/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:119]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:122]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:131]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:134]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:137]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:143]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:146]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:149]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:155]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:158]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:161]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:167]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:171]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:174]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc:178]
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sbn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_ar_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:104]
+INFO: [Common 17-14] Message 'Vivado 12-180' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:119]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:122]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:131]
+INFO: [Common 17-14] Message 'Vivado_Tcl 4-921' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc:131]
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_sarn_1_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_ar_node/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_24/bd_afc3_srn_1_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_r_node/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_24/bd_afc3_srn_1_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_r_node/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_29/bd_afc3_sarn_2_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s02_nodes/s02_ar_node/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_29/bd_afc3_sarn_2_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s02_nodes/s02_ar_node/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_30/bd_afc3_srn_2_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s02_nodes/s02_r_node/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_30/bd_afc3_srn_2_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s02_nodes/s02_r_node/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_31/bd_afc3_sawn_1_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s02_nodes/s02_aw_node/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_31/bd_afc3_sawn_1_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s02_nodes/s02_aw_node/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_32/bd_afc3_swn_1_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s02_nodes/s02_w_node/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_32/bd_afc3_swn_1_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s02_nodes/s02_w_node/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_33/bd_afc3_sbn_1_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s02_nodes/s02_b_node/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_33/bd_afc3_sbn_1_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s02_nodes/s02_b_node/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_35/bd_afc3_m00arn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_35/bd_afc3_m00arn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_36/bd_afc3_m00rn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_36/bd_afc3_m00rn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_37/bd_afc3_m00awn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_37/bd_afc3_m00awn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_38/bd_afc3_m00wn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_38/bd_afc3_m00wn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_17/bd_afc3_swn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_17/bd_afc3_swn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/smartconnect.xdc] for cell 'design_1_i/axi_smc/inst'
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/smartconnect.xdc:1]
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/smartconnect.xdc] for cell 'design_1_i/axi_smc/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_rst_ddr4_0_300M_0/design_1_rst_ddr4_0_300M_0_board.xdc] for cell 'design_1_i/rst_ddr4_0_300M/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_rst_ddr4_0_300M_0/design_1_rst_ddr4_0_300M_0_board.xdc] for cell 'design_1_i/rst_ddr4_0_300M/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_rst_ddr4_0_300M_0/design_1_rst_ddr4_0_300M_0.xdc] for cell 'design_1_i/rst_ddr4_0_300M/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_rst_ddr4_0_300M_0/design_1_rst_ddr4_0_300M_0.xdc] for cell 'design_1_i/rst_ddr4_0_300M/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/ip_0/synth/design_1_xdma_0_1_pcie4_ip_gt.xdc] for cell 'design_1_i/xdma_0/inst/pcie4_ip_i/inst/design_1_xdma_0_1_pcie4_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_1_pcie4_ip_gt_i/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/ip_0/synth/design_1_xdma_0_1_pcie4_ip_gt.xdc] for cell 'design_1_i/xdma_0/inst/pcie4_ip_i/inst/design_1_xdma_0_1_pcie4_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_1_pcie4_ip_gt_i/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/source/ip_pcie4_uscale_plus_impl_x1y2.xdc] for cell 'design_1_i/xdma_0/inst/pcie4_ip_i/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/source/ip_pcie4_uscale_plus_impl_x1y2.xdc] for cell 'design_1_i/xdma_0/inst/pcie4_ip_i/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/source/ip_pcie4_uscale_plus_x1y2.xdc] for cell 'design_1_i/xdma_0/inst/pcie4_ip_i/inst'
+INFO: [Power 33-23] Power model is not available for xiphy_riu_or [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/source/ip_pcie4_uscale_plus_x1y2.xdc:231]
+INFO: [Power 33-23] Power model is not available for genVref.u_hpio_vref [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/source/ip_pcie4_uscale_plus_x1y2.xdc:231]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/source/ip_pcie4_uscale_plus_x1y2.xdc:231]
+set_switching_activity: Time (s): cpu = 00:01:02 ; elapsed = 00:00:27 . Memory (MB): peak = 5135.977 ; gain = 1618.473 ; free physical = 469265 ; free virtual = 508560
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'REQP-1839' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/source/ip_pcie4_uscale_plus_x1y2.xdc:238]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'REQP-1840' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/source/ip_pcie4_uscale_plus_x1y2.xdc:240]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'REQP-1857' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/source/ip_pcie4_uscale_plus_x1y2.xdc:242]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/source/ip_pcie4_uscale_plus_x1y2.xdc:253]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/source/ip_pcie4_uscale_plus_x1y2.xdc:254]
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/source/ip_pcie4_uscale_plus_x1y2.xdc] for cell 'design_1_i/xdma_0/inst/pcie4_ip_i/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/design_1_xdma_0_1_board.xdc] for cell 'design_1_i/xdma_0/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/design_1_xdma_0_1_board.xdc] for cell 'design_1_i/xdma_0/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/source/design_1_xdma_0_1_pcie4_uscaleplus_ip.xdc] for cell 'design_1_i/xdma_0/inst'
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'REQP-1840' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/source/design_1_xdma_0_1_pcie4_uscaleplus_ip.xdc:120]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'REQP-1857' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/source/design_1_xdma_0_1_pcie4_uscaleplus_ip.xdc:122]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'REQP-1858' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/source/design_1_xdma_0_1_pcie4_uscaleplus_ip.xdc:124]
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/source/design_1_xdma_0_1_pcie4_uscaleplus_ip.xdc] for cell 'design_1_i/xdma_0/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1/design_1_util_ds_buf_1_board.xdc] for cell 'design_1_i/util_ds_buf/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1/design_1_util_ds_buf_1_board.xdc] for cell 'design_1_i/util_ds_buf/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1/design_1_util_ds_buf_1.xdc] for cell 'design_1_i/util_ds_buf/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1/design_1_util_ds_buf_1.xdc] for cell 'design_1_i/util_ds_buf/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_board.xdc] for cell 'design_1_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_board.xdc] for cell 'design_1_i/axi_quad_spi_0/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.xdc] for cell 'design_1_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.xdc] for cell 'design_1_i/axi_quad_spi_0/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/bd_0/ip/ip_1/bd_45eb_rst_0_0_board.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/bd_0/ip/ip_1/bd_45eb_rst_0_0_board.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/bd_0/ip/ip_1/bd_45eb_rst_0_0.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/bd_0/ip/ip_1/bd_45eb_rst_0_0.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/bd_0/ip/ip_2/bd_45eb_ilmb_0.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/bd_0/ip/ip_2/bd_45eb_ilmb_0.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/bd_0/ip/ip_3/bd_45eb_dlmb_0.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/bd_0/ip/ip_3/bd_45eb_dlmb_0.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/bd_0/ip/ip_10/bd_45eb_iomodule_0_0_board.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/bd_0/ip/ip_10/bd_45eb_iomodule_0_0_board.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/ip_0/design_1_ddr4_0_0_microblaze_mcs_board.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/ip_0/design_1_ddr4_0_0_microblaze_mcs_board.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/par/design_1_ddr4_0_0.xdc] for cell 'design_1_i/ddr4_0/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/par/design_1_ddr4_0_0.xdc] for cell 'design_1_i/ddr4_0/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/microblaze_0/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/microblaze_0/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_rst_ddr4_0_100M_0/design_1_rst_ddr4_0_100M_0_board.xdc] for cell 'design_1_i/rst_ddr4_0_100M/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_rst_ddr4_0_100M_0/design_1_rst_ddr4_0_100M_0_board.xdc] for cell 'design_1_i/rst_ddr4_0_100M/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_rst_ddr4_0_100M_0/design_1_rst_ddr4_0_100M_0.xdc] for cell 'design_1_i/rst_ddr4_0_100M/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_rst_ddr4_0_100M_0/design_1_rst_ddr4_0_100M_0.xdc] for cell 'design_1_i/rst_ddr4_0_100M/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/bd_0/ip/ip_0/bd_45eb_microblaze_I_0.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/bd_0/ip/ip_0/bd_45eb_microblaze_I_0.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0.xdc] for cell 'design_1_i/axi_timer_0/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0.xdc] for cell 'design_1_i/axi_timer_0/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr0_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr0/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr0_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr0/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr0_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr0/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr0_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr0/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_2/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_2/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_2/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_2/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_3/bd_afc3_psr_aclk1_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_3/bd_afc3_psr_aclk1_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_3/bd_afc3_psr_aclk1_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_3/bd_afc3_psr_aclk1_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_4/bd_afc3_psr_aclk2_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk2/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_4/bd_afc3_psr_aclk2_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk2/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_4/bd_afc3_psr_aclk2_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk2/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_4/bd_afc3_psr_aclk2_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk2/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_14/bd_afc3_sarn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_14/bd_afc3_sarn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_15/bd_afc3_srn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_15/bd_afc3_srn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_16/bd_afc3_sawn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_16/bd_afc3_sawn_0_clocks.xdc] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.srcs/constrs_1/new/flashconstraints.xdc]
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.srcs/constrs_1/new/flashconstraints.xdc]
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/design_1_ddr4_0_0_board.xdc] for cell 'design_1_i/ddr4_0/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/design_1_ddr4_0_0_board.xdc] for cell 'design_1_i/ddr4_0/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m03_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_clocks.xdc:18]
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m03_couplers/auto_cc/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'design_1_i/mdm_1/U0'
+INFO: [Timing 38-2] Deriving generated clocks [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc:5]
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'design_1_i/mdm_1/U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/design_1_xdma_0_1_pcie4_ip_board.xdc] for cell 'design_1_i/xdma_0/inst/pcie4_ip_i/inst'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/design_1_xdma_0_1_pcie4_ip_board.xdc] for cell 'design_1_i/xdma_0/inst/pcie4_ip_i/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/synth/design_1_xdma_0_1_pcie4_ip_late.xdc] for cell 'design_1_i/xdma_0/inst/pcie4_ip_i/inst'
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/synth/design_1_xdma_0_1_pcie4_ip_late.xdc:73]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'TIMING-54' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/synth/design_1_xdma_0_1_pcie4_ip_late.xdc:73]
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_xdma_0_1/ip_0/synth/design_1_xdma_0_1_pcie4_ip_late.xdc] for cell 'design_1_i/xdma_0/inst/pcie4_ip_i/inst'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_clocks.xdc] for cell 'design_1_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_clocks.xdc] for cell 'design_1_i/axi_quad_spi_0/U0'
+WARNING: [Constraints 18-401] set_max_delay: 'design_1_i/axi_smc/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_rd_b.gen_rd_b_synth_template.gen_rf_narrow_reg.doutb_reg[0]_i_1' is not a valid endpoint. [/cm/shared/apps/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:56]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+INFO: [Project 1-1714] 136 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[16].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[17].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[18].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/sw/calibration_0/Debug/calibration_ddr.elf /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf 
+INFO: [Project 1-1687] 775 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5182.066 ; gain = 0.000 ; free physical = 469226 ; free virtual = 508521
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1541 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 7 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 3 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 4 instances
+  IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT(x2)): 18 instances
+  IOBUFE3 => IOBUFE3 (IBUFCTRL, INBUF, OBUFT_DCIEN): 72 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 111 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 100 instances
+  RAM16X1S => RAM32X1S (RAMS32): 13 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 9 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 337 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 762 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 82 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 21 instances
+
+61 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:02:03 ; elapsed = 00:01:19 . Memory (MB): peak = 5182.066 ; gain = 3754.637 ; free physical = 469224 ; free virtual = 508520
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu200'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 5182.066 ; gain = 0.000 ; free physical = 469224 ; free virtual = 508519
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 23f653e40
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:06 . Memory (MB): peak = 5182.066 ; gain = 0.000 ; free physical = 469197 ; free virtual = 508492
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+
+Phase 1.1.1 Generate And Synthesize MIG Cores
+INFO: [Mig 66-454] Using cached IP synthesis design for IP xilinx.com:ip:ddr4_phy:2.2, cache-ID = 603b2dcc1d3ab48b.
+Done building netlist checker database: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.05 . Memory (MB): peak = 5300.211 ; gain = 0.000 ; free physical = 469053 ; free virtual = 508379
+set_switching_activity: Time (s): cpu = 00:00:51 ; elapsed = 00:00:13 . Memory (MB): peak = 5436.578 ; gain = 136.367 ; free physical = 468904 ; free virtual = 508229
+read_xdc: Time (s): cpu = 00:01:17 ; elapsed = 00:00:22 . Memory (MB): peak = 5439.250 ; gain = 139.039 ; free physical = 468902 ; free virtual = 508228
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 5439.250 ; gain = 0.000 ; free physical = 468931 ; free virtual = 508227
+Phase 1.1.1 Generate And Synthesize MIG Cores | Checksum: 1678597c0
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:42 . Memory (MB): peak = 5439.250 ; gain = 232.332 ; free physical = 468931 ; free virtual = 508227
+
+Phase 1.1.2 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = c062713b51db69c8.
+Done building netlist checker database: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 5462.781 ; gain = 11.047 ; free physical = 468896 ; free virtual = 508195
+get_clocks: Time (s): cpu = 00:00:26 ; elapsed = 00:00:06 . Memory (MB): peak = 5462.781 ; gain = 0.000 ; free physical = 468887 ; free virtual = 508186
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 5462.781 ; gain = 0.000 ; free physical = 468887 ; free virtual = 508186
+Phase 1.1.2 Generate And Synthesize Debug Cores | Checksum: 8423f108
+
+Time (s): cpu = 00:02:22 ; elapsed = 00:01:20 . Memory (MB): peak = 5462.781 ; gain = 255.863 ; free physical = 468886 ; free virtual = 508185
+Phase 1.1 Core Generation And Design Setup | Checksum: 8423f108
+
+Time (s): cpu = 00:02:22 ; elapsed = 00:01:20 . Memory (MB): peak = 5462.781 ; gain = 255.863 ; free physical = 468886 ; free virtual = 508185
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 8423f108
+
+Time (s): cpu = 00:02:22 ; elapsed = 00:01:20 . Memory (MB): peak = 5462.781 ; gain = 255.863 ; free physical = 468886 ; free virtual = 508185
+Phase 1 Initialization | Checksum: 8423f108
+
+Time (s): cpu = 00:02:22 ; elapsed = 00:01:20 . Memory (MB): peak = 5462.781 ; gain = 255.863 ; free physical = 468886 ; free virtual = 508185
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 8423f108
+
+Time (s): cpu = 00:02:36 ; elapsed = 00:01:24 . Memory (MB): peak = 5462.781 ; gain = 255.863 ; free physical = 468883 ; free virtual = 508182
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 8423f108
+
+Time (s): cpu = 00:02:37 ; elapsed = 00:01:24 . Memory (MB): peak = 5510.781 ; gain = 303.863 ; free physical = 468845 ; free virtual = 508144
+Phase 2 Timer Update And Timing Data Collection | Checksum: 8423f108
+
+Time (s): cpu = 00:02:37 ; elapsed = 00:01:24 . Memory (MB): peak = 5510.781 ; gain = 303.863 ; free physical = 468845 ; free virtual = 508144
+
+Phase 3 Retarget
+INFO: [Opt 31-1566] Pulled 88 inverters resulting in an inversion of 851 pins
+INFO: [Opt 31-138] Pushed 149 inverter(s) to 9603 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 12bde2419
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:28 . Memory (MB): peak = 5510.781 ; gain = 303.863 ; free physical = 468850 ; free virtual = 508149
+Retarget | Checksum: 12bde2419
+INFO: [Opt 31-389] Phase Retarget created 527 cells and removed 2168 cells
+INFO: [Opt 31-1021] In phase Retarget, 131 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 11 inverter(s) to 33 load pin(s).
+Phase 4 Constant propagation | Checksum: f808583a
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:30 . Memory (MB): peak = 5510.781 ; gain = 303.863 ; free physical = 468838 ; free virtual = 508136
+Constant propagation | Checksum: f808583a
+INFO: [Opt 31-389] Phase Constant propagation created 1670 cells and removed 3773 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 128 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: a4173c04
+
+Time (s): cpu = 00:02:48 ; elapsed = 00:01:36 . Memory (MB): peak = 5510.781 ; gain = 303.863 ; free physical = 468830 ; free virtual = 508129
+Sweep | Checksum: a4173c04
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 6202 cells
+INFO: [Opt 31-1021] In phase Sweep, 2088 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG design_1_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG_inst to drive 40 load(s) on clock net design_1_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFGCE
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: d314493e
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:01:37 . Memory (MB): peak = 5510.781 ; gain = 303.863 ; free physical = 468830 ; free virtual = 508128
+BUFG optimization | Checksum: d314493e
+INFO: [Opt 31-662] Phase BUFG optimization created 2 cells of which 2 are BUFGs and removed 2 cells.
+
+Phase 7 Shift Register Optimization
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][100]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][101]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][102]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][103]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][104]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][105]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][106]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][107]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][108]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][109]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][110]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][111]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][112]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][113]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][114]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][115]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][116]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][117]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][118]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][119]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][120]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][121]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][122]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][123]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][124]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][125]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][126]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][127]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][128]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][129]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][130]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][131]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][132]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][133]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][134]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][135]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][136]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][137]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][138]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][139]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][140]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][141]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][142]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][143]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][144]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][145]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][146]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][147]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][148]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][149]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][14]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][150]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][151]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][152]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][153]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][154]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][155]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][156]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][157]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][158]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][159]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][15]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][160]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][161]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][162]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][163]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][164]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][165]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][166]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][167]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][168]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][169]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][16]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][170]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][171]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][172]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][173]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][174]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][175]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][176]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][177]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][178]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][179]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][17]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][180]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][181]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][182]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][183]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][184]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][185]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][186]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][187]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][188]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][189]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ddr4_0/inst/u_ddr_axi/axi_r_channel_0/rd_data_fifo_0/memory_reg[31][18]_srl32 due to none static srl address bits
+INFO: [Common 17-14] Message 'Opt 31-1131' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: d314493e
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:01:37 . Memory (MB): peak = 5510.781 ; gain = 303.863 ; free physical = 468830 ; free virtual = 508128
+Shift Register Optimization | Checksum: d314493e
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+INFO: [Opt 31-1566] Pulled 1 inverters resulting in an inversion of 1 pins
+Phase 8 Post Processing Netlist | Checksum: 74a1bad1
+
+Time (s): cpu = 00:02:52 ; elapsed = 00:01:38 . Memory (MB): peak = 5510.781 ; gain = 303.863 ; free physical = 468830 ; free virtual = 508129
+Post Processing Netlist | Checksum: 74a1bad1
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 221 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 10ff01a86
+
+Time (s): cpu = 00:02:54 ; elapsed = 00:01:39 . Memory (MB): peak = 5510.781 ; gain = 303.863 ; free physical = 468830 ; free virtual = 508129
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.24 . Memory (MB): peak = 5510.781 ; gain = 0.000 ; free physical = 468830 ; free virtual = 508129
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 10ff01a86
+
+Time (s): cpu = 00:02:54 ; elapsed = 00:01:40 . Memory (MB): peak = 5510.781 ; gain = 303.863 ; free physical = 468830 ; free virtual = 508129
+Phase 9 Finalization | Checksum: 10ff01a86
+
+Time (s): cpu = 00:02:54 ; elapsed = 00:01:40 . Memory (MB): peak = 5510.781 ; gain = 303.863 ; free physical = 468830 ; free virtual = 508129
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             527  |            2168  |                                            131  |
+|  Constant propagation         |            1670  |            3773  |                                            128  |
+|  Sweep                        |               0  |            6202  |                                           2088  |
+|  BUFG optimization            |               2  |               2  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               1  |                                            221  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 10ff01a86
+
+Time (s): cpu = 00:02:54 ; elapsed = 00:01:40 . Memory (MB): peak = 5510.781 ; gain = 303.863 ; free physical = 468830 ; free virtual = 508129
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 5510.781 ; gain = 0.000 ; free physical = 468830 ; free virtual = 508129
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 163 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 27 WE to EN ports
+Number of BRAM Ports augmented: 32 newly gated: 113 Total Ports: 326
+Ending PowerOpt Patch Enables Task | Checksum: 14a756403
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468215 ; free virtual = 507514
+Ending Power Optimization Task | Checksum: 14a756403
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:28 . Memory (MB): peak = 6290.777 ; gain = 779.996 ; free physical = 468214 ; free virtual = 507513
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 11a407bf1
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:13 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468209 ; free virtual = 507508
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468209 ; free virtual = 507508
+Ending Final Cleanup Task | Checksum: 11a407bf1
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:15 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468209 ; free virtual = 507508
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468209 ; free virtual = 507508
+Ending Netlist Obfuscation Task | Checksum: 11a407bf1
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468209 ; free virtual = 507508
+INFO: [Common 17-83] Releasing license: Implementation
+111 Infos, 330 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:05:32 ; elapsed = 00:02:32 . Memory (MB): peak = 6290.777 ; gain = 1108.711 ; free physical = 468209 ; free virtual = 507508
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468204 ; free virtual = 507503
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.09 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468211 ; free virtual = 507516
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468211 ; free virtual = 507516
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.72 ; elapsed = 00:00:00.16 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468198 ; free virtual = 507513
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.92 ; elapsed = 00:00:00.22 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468193 ; free virtual = 507515
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468193 ; free virtual = 507515
+Wrote Device Cache: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468190 ; free virtual = 507515
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.35 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468190 ; free virtual = 507515
+INFO: [Common 17-1381] The checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:39 ; elapsed = 00:00:18 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468156 ; free virtual = 507501
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu200'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468151 ; free virtual = 507495
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 7101b3f1
+
+Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.11 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468151 ; free virtual = 507495
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468151 ; free virtual = 507495
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 16feda148
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468132 ; free virtual = 507477
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 2029137fb
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:46 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468021 ; free virtual = 507365
+
+Phase 1.4 Constrain Clocks/Macros
+MIG CONSTR ADDED 1
+MIG Constraint : added 1
+Phase 1.4 Constrain Clocks/Macros | Checksum: 2029137fb
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:46 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468021 ; free virtual = 507365
+Phase 1 Placer Initialization | Checksum: 2029137fb
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:47 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 468023 ; free virtual = 507368
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+INFO: [Place 30-1906] Running placement in ultrathreads mode using maximum of 8 CPUs
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 197dc27d3
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:12 . Memory (MB): peak = 6290.777 ; gain = 0.000 ; free physical = 467999 ; free virtual = 507343
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+WARNING: [Place 30-1995] Horizontal BUFCE_ROW programmable delay is capped at 3 for clock net design_1_i/xdma_0/inst/pcie4_ip_i/inst/design_1_xdma_0_1_pcie4_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_CORECLK due to PCIE_GT_DIFF_REGION MAX_SKEW requirements
+WARNING: [Place 30-1995] Horizontal BUFCE_ROW programmable delay is capped at 3 for clock net design_1_i/xdma_0/inst/pcie4_ip_i/inst/design_1_xdma_0_1_pcie4_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_PCLK2_GT due to PCIE_GT_DIFF_REGION MAX_SKEW requirements
+WARNING: [Place 30-1995] Horizontal BUFCE_ROW programmable delay is capped at 3 for clock net design_1_i/xdma_0/inst/pcie4_ip_i/inst/design_1_xdma_0_1_pcie4_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_USERCLK due to PCIE_GT_DIFF_REGION MAX_SKEW requirements
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: e4560292
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:01:18 . Memory (MB): peak = 6381.395 ; gain = 90.617 ; free physical = 467907 ; free virtual = 507251
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: e4560292
+
+Time (s): cpu = 00:02:38 ; elapsed = 00:01:26 . Memory (MB): peak = 6689.395 ; gain = 398.617 ; free physical = 467597 ; free virtual = 506942
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 13ff60ac3
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:01:31 . Memory (MB): peak = 6689.395 ; gain = 398.617 ; free physical = 467603 ; free virtual = 506947
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 13ff60ac3
+
+Time (s): cpu = 00:02:52 ; elapsed = 00:01:32 . Memory (MB): peak = 6689.395 ; gain = 398.617 ; free physical = 467601 ; free virtual = 506946
+Phase 2.1.1 Partition Driven Placement | Checksum: 13ff60ac3
+
+Time (s): cpu = 00:02:52 ; elapsed = 00:01:32 . Memory (MB): peak = 6689.395 ; gain = 398.617 ; free physical = 467601 ; free virtual = 506945
+Phase 2.1 Floorplanning | Checksum: 13ff60ac3
+
+Time (s): cpu = 00:02:52 ; elapsed = 00:01:32 . Memory (MB): peak = 6689.395 ; gain = 398.617 ; free physical = 467600 ; free virtual = 506945
+
+Phase 2.2 Physical Synthesis After Floorplan
+INFO: [Physopt 32-46] Identified 1 candidate net for critical-cell optimization.
+INFO: [Physopt 32-81] Processed net design_1_i/rst_ddr4_0_100M/U0/peripheral_aresetn[0]. Replicated 1 times.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 1 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.07 . Memory (MB): peak = 6689.395 ; gain = 0.000 ; free physical = 467602 ; free virtual = 506946
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 6689.395 ; gain = 0.000 ; free physical = 467602 ; free virtual = 506946
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                         |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------
+|  PSIP Post Floorplan SLR Replication  |            1  |              0  |                     1  |           0  |           1  |  00:00:04  |
+|  Total                                |            1  |              0  |                     1  |           0  |           1  |  00:00:04  |
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis After Floorplan | Checksum: 1b937b0dc
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:01:39 . Memory (MB): peak = 6689.395 ; gain = 398.617 ; free physical = 467604 ; free virtual = 506948
+
+Phase 2.3 Update Timing before SLR Path Opt
+Phase 2.3 Update Timing before SLR Path Opt | Checksum: 17096f782
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:01:40 . Memory (MB): peak = 6689.395 ; gain = 398.617 ; free physical = 467604 ; free virtual = 506948
+
+Phase 2.4 Post-Processing in Floorplanning
+Phase 2.4 Post-Processing in Floorplanning | Checksum: 15c95db6c
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:01:41 . Memory (MB): peak = 6689.395 ; gain = 398.617 ; free physical = 467604 ; free virtual = 506948
+
+Phase 2.5 Global Placement Core
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: bfb56cef
+
+Time (s): cpu = 00:09:41 ; elapsed = 00:03:35 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464745 ; free virtual = 504090
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 3761 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 1570 nets or LUTs. Breaked 0 LUT, combined 1570 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 141 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 113 nets.  Re-placed 651 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 113 nets or cells. Created 20 new cells, deleted 22 existing cells and moved 651 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00.74 ; elapsed = 00:00:00.76 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464745 ; free virtual = 504090
+INFO: [Physopt 32-1132] Very high fanout net 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_mc/u_ddr_mc_ecc/rd_data_addr_dly_reg[4]_0[0]' is not considered as a candidate in VHFN optimzation. The fanout considered for this optimization is changed from 1034 to 132 due to a timing constraint that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 132.
+INFO: [Physopt 32-1132] Very high fanout net 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_mc/u_ddr_mc_ecc/rd_data_addr_dly_reg[4]_0[1]' is not considered as a candidate in VHFN optimzation. The fanout considered for this optimization is changed from 1076 to 174 due to a timing constraint that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 174.
+INFO: [Physopt 32-1132] Very high fanout net 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_mc/u_ddr_mc_ecc/rd_data_addr_dly_reg[4]_0[2]' is not considered as a candidate in VHFN optimzation. The fanout considered for this optimization is changed from 1071 to 169 due to a timing constraint that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 169.
+INFO: [Physopt 32-76] Pass 1. Identified 1 candidate net for fanout optimization.
+INFO: [Physopt 32-81] Processed net design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_ddr_cal_addr_decode/u_ddr_cal_cplx/cplx_cal. Replicated 8 times.
+INFO: [Physopt 32-232] Optimized 1 net. Created 8 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 8 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.05 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464747 ; free virtual = 504092
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464747 ; free virtual = 504092
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |           1570  |                  1570  |           0  |           1  |  00:00:02  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |           20  |             22  |                   113  |           0  |           1  |  00:00:13  |
+|  Very High Fanout                                 |            8  |              0  |                     1  |           0  |           1  |  00:00:01  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           28  |           1592  |                  1684  |           0  |           5  |  00:00:16  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: ff5411d8
+
+Time (s): cpu = 00:10:10 ; elapsed = 00:03:58 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464746 ; free virtual = 504091
+Phase 2.5 Global Placement Core | Checksum: a2009e57
+
+Time (s): cpu = 00:11:29 ; elapsed = 00:04:22 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464743 ; free virtual = 504087
+Phase 2 Global Placement | Checksum: a2009e57
+
+Time (s): cpu = 00:11:29 ; elapsed = 00:04:23 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464743 ; free virtual = 504087
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: f3da0783
+
+Time (s): cpu = 00:12:14 ; elapsed = 00:04:37 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464752 ; free virtual = 504097
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: b47c3789
+
+Time (s): cpu = 00:12:35 ; elapsed = 00:04:46 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464737 ; free virtual = 504082
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 16110e3ec
+
+Time (s): cpu = 00:13:08 ; elapsed = 00:04:56 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464735 ; free virtual = 504080
+
+Phase 3.4 IO Cut Optimizer
+Phase 3.4 IO Cut Optimizer | Checksum: 9f5dfb4b
+
+Time (s): cpu = 00:13:11 ; elapsed = 00:04:58 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464736 ; free virtual = 504081
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 11d35958c
+
+Time (s): cpu = 00:13:41 ; elapsed = 00:05:07 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464755 ; free virtual = 504100
+
+Phase 3.6 Small Shape DP
+
+Phase 3.6.1 splitSLRCrossingNets
+Phase 3.6.1 splitSLRCrossingNets | Checksum: 9ac22079
+
+Time (s): cpu = 00:13:41 ; elapsed = 00:05:08 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464754 ; free virtual = 504099
+Phase 3.6 Small Shape DP | Checksum: cc647d82
+
+Time (s): cpu = 00:14:57 ; elapsed = 00:05:30 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464777 ; free virtual = 504122
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: ad45c322
+
+Time (s): cpu = 00:15:02 ; elapsed = 00:05:35 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464772 ; free virtual = 504117
+Phase 3 Detail Placement | Checksum: ad45c322
+
+Time (s): cpu = 00:15:03 ; elapsed = 00:05:37 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464771 ; free virtual = 504116
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 20bc02e44
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.474 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1dd7794f2
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:04 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464779 ; free virtual = 504123
+INFO: [Place 46-35] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/sync_reset, inserted BUFG to drive 1562 loads.
+INFO: [Place 46-45] Replicated bufg driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Use_Async_Reset.sync_reset_reg_replica
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 1, Replicated BUFG Driver: 1, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 20fe4a962
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464779 ; free virtual = 504124
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1fa1c6f57
+
+Time (s): cpu = 00:17:29 ; elapsed = 00:06:23 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464785 ; free virtual = 504130
+
+Phase 4.1.1.2 BUFG Replication
+INFO: [Place 46-63] BUFG replication identified 0 candidate nets: Replicated nets: 0, Replicated BUFGs: 0, Replicated BUFG Driver: 0, moved BUFGs: 0, Skipped due to Placement / Routing Conflict: 0, Skipped due to Timing: 0, Skipped due to constraints: 0
+Phase 4.1.1.2 BUFG Replication | Checksum: 1fa1c6f57
+
+Time (s): cpu = 00:17:30 ; elapsed = 00:06:23 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464779 ; free virtual = 504124
+
+Phase 4.1.1.3 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.535. For the most accurate timing information please run report_timing.
+Phase 4.1.1.3 Post Placement Timing Optimization | Checksum: 15853d424
+
+Time (s): cpu = 00:17:40 ; elapsed = 00:06:31 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464779 ; free virtual = 504124
+
+Phase 4.1.1.4 Replication
+INFO: [Place 46-19] Post Replication Timing Summary WNS=0.535. For the most accurate timing information please run report_timing.
+Phase 4.1.1.4 Replication | Checksum: 15853d424
+
+Time (s): cpu = 00:17:42 ; elapsed = 00:06:33 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464782 ; free virtual = 504127
+
+Time (s): cpu = 00:17:42 ; elapsed = 00:06:33 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464782 ; free virtual = 504127
+Phase 4.1 Post Commit Optimization | Checksum: 15853d424
+
+Time (s): cpu = 00:17:42 ; elapsed = 00:06:34 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464782 ; free virtual = 504127
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464784 ; free virtual = 504129
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 19e3de88a
+
+Time (s): cpu = 00:18:31 ; elapsed = 00:07:02 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464787 ; free virtual = 504133
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                4x4|                8x8|                4x4|
+|___________|___________________|___________________|___________________|
+|      South|                4x4|                8x8|                4x4|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                8x8|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+
+SLR0:
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                4x4|                8x8|                4x4|
+|___________|___________________|___________________|___________________|
+|      South|                4x4|                8x8|                4x4|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                8x8|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+
+SLR1:
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                4x4|                2x2|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+
+SLR2:
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 19e3de88a
+
+Time (s): cpu = 00:18:32 ; elapsed = 00:07:02 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464787 ; free virtual = 504132
+Phase 4.3 Placer Reporting | Checksum: 19e3de88a
+
+Time (s): cpu = 00:18:33 ; elapsed = 00:07:03 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464787 ; free virtual = 504132
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464787 ; free virtual = 504132
+
+Time (s): cpu = 00:18:33 ; elapsed = 00:07:03 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464787 ; free virtual = 504132
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 11f9c2fda
+
+Time (s): cpu = 00:18:34 ; elapsed = 00:07:04 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464787 ; free virtual = 504133
+Ending Placer Task | Checksum: cd3c985c
+
+Time (s): cpu = 00:18:34 ; elapsed = 00:07:05 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464787 ; free virtual = 504133
+162 Infos, 333 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:18:45 ; elapsed = 00:07:10 . Memory (MB): peak = 9564.551 ; gain = 3273.773 ; free physical = 464783 ; free virtual = 504129
+INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.59 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464794 ; free virtual = 504140
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:00.83 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464791 ; free virtual = 504141
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.31 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464752 ; free virtual = 504141
+Wrote PlaceDB: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464618 ; free virtual = 504140
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464618 ; free virtual = 504140
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:00.24 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464616 ; free virtual = 504140
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.4 ; elapsed = 00:00:00.14 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464603 ; free virtual = 504140
+Wrote Device Cache: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464600 ; free virtual = 504140
+Write Physdb Complete: Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464600 ; free virtual = 504140
+report_design_analysis: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464599 ; free virtual = 504146
+INFO: [Common 17-1381] The checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:39 ; elapsed = 00:00:20 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464732 ; free virtual = 504145
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu200'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:16 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464733 ; free virtual = 504145
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+171 Infos, 333 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:01:05 ; elapsed = 00:00:17 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464733 ; free virtual = 504145
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.29 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464694 ; free virtual = 504144
+Wrote PlaceDB: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464567 ; free virtual = 504152
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464567 ; free virtual = 504152
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.23 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464565 ; free virtual = 504152
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.4 ; elapsed = 00:00:00.14 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464552 ; free virtual = 504152
+Wrote Device Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464549 ; free virtual = 504152
+Write Physdb Complete: Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464549 ; free virtual = 504152
+INFO: [Common 17-1381] The checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/impl_1/design_1_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464673 ; free virtual = 504147
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu200'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 28615212 ConstDB: 0 ShapeSum: 5ef131e4 RouteDB: 45ea1466
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464666 ; free virtual = 504140
+Post Restoration Checksum: NetGraph: 960bc006 | NumContArr: 2dfa8179 | Constraints: 852b644c | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 20bdaa068
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:12 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464659 ; free virtual = 504133
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 20bdaa068
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:12 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464658 ; free virtual = 504132
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 20bdaa068
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:12 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464658 ; free virtual = 504132
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 2cb8dfed5
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:25 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464654 ; free virtual = 504128
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 187470b31
+
+Time (s): cpu = 00:02:17 ; elapsed = 00:00:42 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464651 ; free virtual = 504126
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.587  | TNS=0.000  | WHS=-0.535 | THS=-839.550|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 1e5b8c00c
+
+Time (s): cpu = 00:04:51 ; elapsed = 00:01:19 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464671 ; free virtual = 504146
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.587  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 1b9822c46
+
+Time (s): cpu = 00:04:52 ; elapsed = 00:01:19 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464671 ; free virtual = 504146
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00032528 %
+  Global Horizontal Routing Utilization  = 0.000761376 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 153638
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 130770
+  Number of Partially Routed Nets     = 22868
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 1e2f7ad23
+
+Time (s): cpu = 00:05:04 ; elapsed = 00:01:23 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464657 ; free virtual = 504131
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 1e2f7ad23
+
+Time (s): cpu = 00:05:04 ; elapsed = 00:01:23 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464656 ; free virtual = 504130
+
+Phase 3.2 Initial Net Routing
+Phase 3.2 Initial Net Routing | Checksum: 2dc0e9cda
+
+Time (s): cpu = 00:06:45 ; elapsed = 00:01:50 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464647 ; free virtual = 504121
+Phase 3 Initial Routing | Checksum: 2ba1e4b4a
+
+Time (s): cpu = 00:06:49 ; elapsed = 00:01:51 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464647 ; free virtual = 504122
+
+INFO: [Route 35-449] Initial Estimated Congestion
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+|           |___________________|___________________|___________________|
+| Direction | Size   | % Tiles  | Size   | % Tiles  | Size   | % Tiles  |
+|___________|________|__________|________|__________|________|__________|
+|      NORTH|     8x8|      0.18|     8x8|      0.46|   16x16|      0.20|
+|___________|________|__________|________|__________|________|__________|
+|      SOUTH|     8x8|      0.14|     8x8|      0.39|     8x8|      0.19|
+|___________|________|__________|________|__________|________|__________|
+|       EAST|     8x8|      0.04|     2x2|      0.03|   16x16|      0.27|
+|___________|________|__________|________|__________|________|__________|
+|       WEST|     8x8|      0.05|     4x4|      0.04|   16x16|      0.27|
+|___________|________|__________|________|__________|________|__________|
+Congestion Report
+SHORT Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+NORTH
+	INT_X28Y161->INT_X35Y176 (CLEM_X28Y161->CLEL_R_X35Y176)
+	INT_X32Y164->INT_X39Y171 (BRAM_X32Y160->DSP_X39Y170)
+	INT_X32Y163->INT_X39Y170 (BRAM_X32Y160->DSP_X39Y170)
+	INT_X32Y168->INT_X39Y175 (BRAM_X32Y165->DSP_X39Y175)
+	INT_X32Y167->INT_X39Y174 (BRAM_X32Y165->DSP_X39Y170)
+EAST
+	INT_X28Y153->INT_X35Y176 (CLEM_X28Y153->CLEL_R_X35Y176)
+	INT_X32Y164->INT_X39Y171 (BRAM_X32Y160->DSP_X39Y170)
+	INT_X32Y163->INT_X39Y170 (BRAM_X32Y160->DSP_X39Y170)
+	INT_X32Y162->INT_X39Y169 (BRAM_X32Y160->DSP_X39Y165)
+	INT_X32Y169->INT_X39Y176 (BRAM_X32Y165->DSP_X39Y175)
+WEST
+	INT_X33Y155->INT_X40Y178 (CLEM_X33Y155->CLEL_R_X40Y178)
+	INT_X32Y164->INT_X39Y171 (BRAM_X32Y160->DSP_X39Y170)
+	INT_X32Y171->INT_X39Y178 (BRAM_X32Y170->DSP_X39Y175)
+	INT_X32Y163->INT_X39Y170 (BRAM_X32Y160->DSP_X39Y170)
+	INT_X32Y170->INT_X39Y177 (BRAM_X32Y170->DSP_X39Y175)
+INFO: [Route 35-580] Design has 19 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++====================+===================+===================================================================================================================================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                                                                                                                               |
++====================+===================+===================================================================================================================================================================================+
+| mmcm_clkout0       | mmcm_clkout0      | design_1_i/microblaze_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_sync_conv.gen_conv_read_ch.r_sync_clock_converter/gen_sync_clock_converter.m_tpayload_r_reg[26]/D |
+| mmcm_clkout0       | mmcm_clkout0      | design_1_i/microblaze_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_sync_conv.gen_conv_read_ch.r_sync_clock_converter/gen_sync_clock_converter.m_tpayload_r_reg[31]/D |
+| mmcm_clkout0       | mmcm_clkout0      | design_1_i/microblaze_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_sync_conv.gen_conv_read_ch.r_sync_clock_converter/gen_sync_clock_converter.m_tpayload_r_reg[28]/D |
+| mmcm_clkout0       | mmcm_clkout0      | design_1_i/microblaze_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_sync_conv.gen_conv_read_ch.r_sync_clock_converter/gen_sync_clock_converter.m_tpayload_r_reg[24]/D |
+| mmcm_clkout0       | mmcm_clkout0      | design_1_i/microblaze_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_sync_conv.gen_conv_read_ch.r_sync_clock_converter/gen_sync_clock_converter.m_tpayload_r_reg[22]/D |
++--------------------+-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 35548
+ Number of Nodes with overlaps = 3855
+ Number of Nodes with overlaps = 597
+ Number of Nodes with overlaps = 144
+ Number of Nodes with overlaps = 42
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.142  | TNS=0.000  | WHS=-0.606 | THS=-9.544 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 2514c5777
+
+Time (s): cpu = 00:13:24 ; elapsed = 00:04:24 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464654 ; free virtual = 504129
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 119
+ Number of Nodes with overlaps = 29
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.058  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1bd1fdf57
+
+Time (s): cpu = 00:14:19 ; elapsed = 00:04:48 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464633 ; free virtual = 504108
+Phase 4 Rip-up And Reroute | Checksum: 1bd1fdf57
+
+Time (s): cpu = 00:14:19 ; elapsed = 00:04:48 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464633 ; free virtual = 504108
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 1be344087
+
+Time (s): cpu = 00:14:21 ; elapsed = 00:04:48 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464632 ; free virtual = 504107
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1be344087
+
+Time (s): cpu = 00:14:22 ; elapsed = 00:04:48 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464632 ; free virtual = 504107
+Phase 5 Delay and Skew Optimization | Checksum: 1be344087
+
+Time (s): cpu = 00:14:22 ; elapsed = 00:04:48 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464632 ; free virtual = 504107
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1c9c5d294
+
+Time (s): cpu = 00:15:08 ; elapsed = 00:04:59 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464640 ; free virtual = 504114
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.058  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 23f01a8e7
+
+Time (s): cpu = 00:15:09 ; elapsed = 00:04:59 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464640 ; free virtual = 504114
+Phase 6 Post Hold Fix | Checksum: 23f01a8e7
+
+Time (s): cpu = 00:15:10 ; elapsed = 00:04:59 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464640 ; free virtual = 504114
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.7344 %
+  Global Horizontal Routing Utilization  = 2.28841 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 23f01a8e7
+
+Time (s): cpu = 00:15:15 ; elapsed = 00:05:00 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464639 ; free virtual = 504114
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 23f01a8e7
+
+Time (s): cpu = 00:15:16 ; elapsed = 00:05:01 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464638 ; free virtual = 504112
+
+Phase 9 Depositing Routes
+INFO: [Route 35-467] Router swapped GT pin design_1_i/xdma_0/inst/pcie4_ip_i/inst/design_1_xdma_0_1_pcie4_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_1_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_1_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[32].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/GTREFCLK0 to physical pin GTYE4_CHANNEL_X1Y32/NORTHREFCLK1
+INFO: [Route 35-467] Router swapped GT pin design_1_i/xdma_0/inst/pcie4_ip_i/inst/design_1_xdma_0_1_pcie4_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_1_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_1_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[32].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[1].GTYE4_CHANNEL_PRIM_INST/GTREFCLK0 to physical pin GTYE4_CHANNEL_X1Y33/NORTHREFCLK1
+INFO: [Route 35-467] Router swapped GT pin design_1_i/xdma_0/inst/pcie4_ip_i/inst/design_1_xdma_0_1_pcie4_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_1_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_1_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[32].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[2].GTYE4_CHANNEL_PRIM_INST/GTREFCLK0 to physical pin GTYE4_CHANNEL_X1Y34/NORTHREFCLK1
+INFO: [Route 35-467] Router swapped GT pin design_1_i/xdma_0/inst/pcie4_ip_i/inst/design_1_xdma_0_1_pcie4_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_1_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_1_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[32].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[3].GTYE4_CHANNEL_PRIM_INST/GTREFCLK0 to physical pin GTYE4_CHANNEL_X1Y35/NORTHREFCLK1
+INFO: [Route 35-467] Router swapped GT pin design_1_i/xdma_0/inst/pcie4_ip_i/inst/design_1_xdma_0_1_pcie4_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_1_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_1_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_common.gen_common_container[32].gen_enabled_common.gtye4_common_wrapper_inst/common_inst/gtye4_common_gen.GTYE4_COMMON_PRIM_INST/GTREFCLK00 to physical pin GTYE4_COMMON_X1Y8/COM0_REFCLKOUT3
+INFO: [Route 35-467] Router swapped GT pin design_1_i/xdma_0/inst/pcie4_ip_i/inst/design_1_xdma_0_1_pcie4_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_1_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_1_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_common.gen_common_container[32].gen_enabled_common.gtye4_common_wrapper_inst/common_inst/gtye4_common_gen.GTYE4_COMMON_PRIM_INST/GTREFCLK01 to physical pin GTYE4_COMMON_X1Y8/COM2_REFCLKOUT3
+Phase 9 Depositing Routes | Checksum: 23f01a8e7
+
+Time (s): cpu = 00:15:27 ; elapsed = 00:05:07 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464635 ; free virtual = 504110
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 271f79eb9
+
+Time (s): cpu = 00:15:29 ; elapsed = 00:05:08 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464635 ; free virtual = 504110
+
+Phase 11 Post Router Timing
+
+Phase 11.1 Update Timing
+Phase 11.1 Update Timing | Checksum: 215f0c08e
+
+Time (s): cpu = 00:16:07 ; elapsed = 00:05:18 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464635 ; free virtual = 504110
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.058  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: 215f0c08e
+
+Time (s): cpu = 00:16:08 ; elapsed = 00:05:18 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464635 ; free virtual = 504110
+INFO: [Route 35-16] Router Completed Successfully
+
+Phase 12 Post-Route Event Processing
+Phase 12 Post-Route Event Processing | Checksum: 1acba968d
+
+Time (s): cpu = 00:16:12 ; elapsed = 00:05:22 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464636 ; free virtual = 504111
+Ending Routing Task | Checksum: 1acba968d
+
+Time (s): cpu = 00:16:15 ; elapsed = 00:05:25 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464636 ; free virtual = 504111
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+195 Infos, 333 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:16:31 ; elapsed = 00:05:31 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464636 ; free virtual = 504111
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:43 ; elapsed = 00:00:12 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464637 ; free virtual = 504111
+INFO: [runtcl-4] Executing : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:02:08 ; elapsed = 00:00:29 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464631 ; free virtual = 504106
+INFO: [runtcl-4] Executing : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+205 Infos, 334 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:01:42 ; elapsed = 00:00:35 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464592 ; free virtual = 504083
+INFO: [runtcl-4] Executing : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+report_timing_summary: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464565 ; free virtual = 504085
+INFO: [runtcl-4] Executing : report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464563 ; free virtual = 504084
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_routed.rpt -pb design_1_wrapper_bus_skew_routed.pb -rpx design_1_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.31 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464516 ; free virtual = 504078
+Wrote PlaceDB: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464396 ; free virtual = 504090
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464396 ; free virtual = 504090
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464358 ; free virtual = 504087
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.13 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464345 ; free virtual = 504087
+Wrote Device Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464342 ; free virtual = 504088
+Write Physdb Complete: Time (s): cpu = 00:00:18 ; elapsed = 00:00:06 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464342 ; free virtual = 504087
+INFO: [Common 17-1381] The checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464483 ; free virtual = 504080
+WARNING: [Memdata 28-361] Design is having concatenated BRAM controllers(heterogenous memory), this configuration is not supported by Updatemem for current device part. Only the first BRAM controller will be added to .MMI and used by Updatemem to update the bitstream with new data.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/xdma_0/inst/ram_top/mas_bridge_ram_write_512.MASTER_WRITE_FIFO/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <design_1_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/xdma_0/inst/ram_top/gen_h2c_bram.H2C_DAT3_FIFO/xpm_memory_sdpram_inst_loop[1].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <design_1_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/xdma_0/inst/ram_top/gen_h2c_bram.H2C_DAT3_FIFO/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <design_1_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/xdma_0/inst/ram_top/gen_h2c_bram.H2C_DAT2_FIFO/xpm_memory_sdpram_inst_loop[1].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <design_1_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/xdma_0/inst/ram_top/gen_h2c_bram.H2C_DAT2_FIFO/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <design_1_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/xdma_0/inst/ram_top/gen_h2c_bram.H2C_DAT1_FIFO/xpm_memory_sdpram_inst_loop[1].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <design_1_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/xdma_0/inst/ram_top/gen_h2c_bram.H2C_DAT1_FIFO/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <design_1_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/xdma_0/inst/ram_top/gen_h2c_bram.H2C_DAT0_FIFO/xpm_memory_sdpram_inst_loop[1].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <design_1_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/xdma_0/inst/ram_top/gen_h2c_bram.H2C_DAT0_FIFO/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <design_1_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/xdma_0/inst/ram_top/gen_c2h_bram.C2H_DAT3_FIFO/xpm_memory_sdpram_inst_loop[1].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <design_1_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/xdma_0/inst/ram_top/gen_c2h_bram.C2H_DAT3_FIFO/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <design_1_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/xdma_0/inst/ram_top/gen_c2h_bram.C2H_DAT2_FIFO/xpm_memory_sdpram_inst_loop[1].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <design_1_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/xdma_0/inst/ram_top/gen_c2h_bram.C2H_DAT2_FIFO/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <design_1_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/xdma_0/inst/ram_top/gen_c2h_bram.C2H_DAT1_FIFO/xpm_memory_sdpram_inst_loop[1].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <design_1_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/xdma_0/inst/ram_top/gen_c2h_bram.C2H_DAT1_FIFO/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <design_1_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/xdma_0/inst/ram_top/gen_c2h_bram.C2H_DAT0_FIFO/xpm_memory_sdpram_inst_loop[1].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <design_1_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/xdma_0/inst/ram_top/gen_c2h_bram.C2H_DAT0_FIFO/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <design_1_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/xdma_0/inst/ram_top/MASTER_READ_BRAM/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <design_1_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[2].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[2].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[2].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[2].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s02_nodes/s02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s02_nodes/s02_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s02_nodes/s02_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s02_nodes/s02_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s02_nodes/s02_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s02_nodes/s02_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s02_nodes/s02_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[2].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[2].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[2].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[2].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[2].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[2].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[2].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[2].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[3].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[3].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[2].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[2].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[2].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[2].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+Command: write_bitstream -force design_1_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu200'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer spi_rtl_sck_iobuf/IBUFCTRL_INST has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer spi_rtl_ss_iobuf_0/IBUFCTRL_INST has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I0) is not included in the LUT equation: 'O5=(A2*A5)+(A2*(~A5)*(~A3))+((~A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I1) is not included in the LUT equation: 'O5=(A2*A5)+(A2*(~A5)*(~A3))+((~A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A1))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC RTSTAT-10] No routable loads: 123 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/LMB_CE_riu, design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/LMB_UE_riu, design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[12], design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[13], design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[14], design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[15], design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_upp/SYNC[0].sync_reg[1], design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_low/SYNC[0].sync_reg[1], design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_upp/SYNC[0].sync_reg[1], design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[0].sync_reg[1], design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_upp/SYNC[1].sync_reg[1], design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_upp/SYNC[1].sync_reg[1], design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[1].sync_reg[1], design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_low/SYNC[1].sync_reg[1], design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[2].sync_reg[1]... and (the first 15 of 121 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 6 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/sw/calibration_0/Debug/calibration_ddr.elf /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf 
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+73 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:01:47 ; elapsed = 00:01:03 . Memory (MB): peak = 9564.551 ; gain = 0.000 ; free physical = 464395 ; free virtual = 504068
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 28 17:37:53 2024...

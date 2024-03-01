@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Wed Feb 28 13:46:57 2024
+# Process ID: 2671590
+# Current directory: /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_dlmb_v10_0_synth_1
+# Command line: vivado -log design_1_dlmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_dlmb_v10_0.tcl
+# Log file: /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_dlmb_v10_0_synth_1/design_1_dlmb_v10_0.vds
+# Journal file: /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_dlmb_v10_0_synth_1/vivado.jou
+# Running On: n019, OS: Linux, CPU Frequency: 2650.000 MHz, CPU Physical cores: 32, Host memory: 540859 MB
+#-----------------------------------------------------------
+source design_1_dlmb_v10_0.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1336.312 ; gain = 52.836 ; free physical = 478103 ; free virtual = 516565
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_dlmb_v10_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 2a9323e2a1c6ec54 to dir: /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_dlmb_v10_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.cache/ip/2023.2.2/2/a/2a9323e2a1c6ec54/design_1_ilmb_v10_0.dcp to /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_dlmb_v10_0_synth_1/design_1_dlmb_v10_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.cache/ip/2023.2.2/2/a/2a9323e2a1c6ec54/design_1_ilmb_v10_0_stub.v to /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_dlmb_v10_0_synth_1/design_1_dlmb_v10_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.cache/ip/2023.2.2/2/a/2a9323e2a1c6ec54/design_1_ilmb_v10_0_stub.vhdl to /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_dlmb_v10_0_synth_1/design_1_dlmb_v10_0_stub.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.cache/ip/2023.2.2/2/a/2a9323e2a1c6ec54/design_1_ilmb_v10_0_sim_netlist.v to /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_dlmb_v10_0_synth_1/design_1_dlmb_v10_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.cache/ip/2023.2.2/2/a/2a9323e2a1c6ec54/design_1_ilmb_v10_0_sim_netlist.vhdl to /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_dlmb_v10_0_synth_1/design_1_dlmb_v10_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_dlmb_v10_0, cache-ID = 2a9323e2a1c6ec54.
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 28 13:47:06 2024...

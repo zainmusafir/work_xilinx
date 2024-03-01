@@ -1,0 +1,419 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Wed Feb 28 13:46:04 2024
+# Process ID: 2670150
+# Current directory: /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_lmb_bram_0_synth_1
+# Command line: vivado -log design_1_lmb_bram_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_lmb_bram_0.tcl
+# Log file: /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_lmb_bram_0_synth_1/design_1_lmb_bram_0.vds
+# Journal file: /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_lmb_bram_0_synth_1/vivado.jou
+# Running On: n019, OS: Linux, CPU Frequency: 3432.510 MHz, CPU Physical cores: 32, Host memory: 540859 MB
+#-----------------------------------------------------------
+source design_1_lmb_bram_0.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1336.078 ; gain = 77.836 ; free physical = 481204 ; free virtual = 519620
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_lmb_bram_0
+Command: synth_design -top design_1_lmb_bram_0 -part xcu200-fsgd2104-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu200'
+INFO: [Device 21-403] Loading part xcu200-fsgd2104-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2670280
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2817.168 ; gain = 391.715 ; free physical = 453915 ; free virtual = 492332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd:80]
+	Parameter C_FAMILY bound to: virtexuplus - type: string 
+	Parameter C_XDEVICEFAMILY bound to: virtexuplus - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 1 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 1 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: ECCH32-7 - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 8 - type: integer 
+	Parameter C_ALGORITHM bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 3 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: design_1_lmb_bram_0.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 1 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 5 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 40 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 40 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 16384 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 16384 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_RSTB bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 1 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 5 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 40 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 40 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 16384 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 16384 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 20 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     24.576232 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_7' declared at '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ipshared/3c0c/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195208' bound to instance 'U0' of component 'blk_mem_gen_v8_4_7' [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd:255]
+INFO: [Synth 8-256] done synthesizing module 'design_1_lmb_bram_0' (0#1) [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd:80]
+WARNING: [Synth 8-7129] Port CLKB in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR_I in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR_I in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[13] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[12] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[11] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[10] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[9] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[8] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[7] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[6] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[5] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[4] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[3] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[2] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[1] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[0] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized7 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3099.613 ; gain = 674.160 ; free physical = 451663 ; free virtual = 490121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3099.613 ; gain = 674.160 ; free physical = 451660 ; free virtual = 490121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3099.613 ; gain = 674.160 ; free physical = 451660 ; free virtual = 490121
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3099.613 ; gain = 0.000 ; free physical = 451645 ; free virtual = 490086
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_lmb_bram_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_lmb_bram_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3129.957 ; gain = 0.000 ; free physical = 451054 ; free virtual = 489500
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3129.992 ; gain = 0.000 ; free physical = 450999 ; free virtual = 489445
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 3129.992 ; gain = 704.539 ; free physical = 448838 ; free virtual = 487284
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu200-fsgd2104-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 3129.992 ; gain = 704.539 ; free physical = 448844 ; free virtual = 487291
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_lmb_bram_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 3129.992 ; gain = 704.539 ; free physical = 448836 ; free virtual = 487283
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 3129.992 ; gain = 704.539 ; free physical = 448704 ; free virtual = 487150
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 40    
++---Registers : 
+	                5 Bit    Registers := 40    
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 160   
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 6840 (col length:120)
+BRAMs: 4320 (col length: RAMB18 360 RAMB36 180)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3129.992 ; gain = 704.539 ; free physical = 449204 ; free virtual = 487651
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3273.645 ; gain = 848.191 ; free physical = 450031 ; free virtual = 488479
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3284.660 ; gain = 859.207 ; free physical = 450016 ; free virtual = 488464
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3294.684 ; gain = 869.230 ; free physical = 450014 ; free virtual = 488461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3300.621 ; gain = 875.168 ; free physical = 449887 ; free virtual = 488340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3300.621 ; gain = 875.168 ; free physical = 449887 ; free virtual = 488340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3300.621 ; gain = 875.168 ; free physical = 449887 ; free virtual = 488340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3300.621 ; gain = 875.168 ; free physical = 449887 ; free virtual = 488340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3300.621 ; gain = 875.168 ; free physical = 449887 ; free virtual = 488340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3300.621 ; gain = 875.168 ; free physical = 449887 ; free virtual = 488340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------------+-----------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name        | RTL Name                                                                                                                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------------+-----------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|blk_mem_gen_v8_4_7 | inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[16].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[4] | 4      | 2     | NO           | NO                 | YES               | 2      | 0       | 
++-------------------+-----------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT2     |     4|
+|2     |LUT4     |    10|
+|3     |LUT6     |    80|
+|4     |RAMB36E2 |    20|
+|5     |SRL16E   |     2|
+|6     |FDRE     |    16|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3300.621 ; gain = 875.168 ; free physical = 449887 ; free virtual = 488340
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 197 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 3300.621 ; gain = 844.789 ; free physical = 449887 ; free virtual = 488340
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3300.629 ; gain = 875.168 ; free physical = 449887 ; free virtual = 488340
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3300.629 ; gain = 0.000 ; free physical = 450173 ; free virtual = 488627
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3376.410 ; gain = 0.000 ; free physical = 450116 ; free virtual = 488569
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 13e05fc2
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 3376.445 ; gain = 1991.555 ; free physical = 450267 ; free virtual = 488721
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2549.142; main = 2449.894; forked = 297.091
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4095.570; main = 3376.414; forked = 965.609
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3382.422 ; gain = 0.000 ; free physical = 452115 ; free virtual = 490569
+INFO: [Common 17-1381] The checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_lmb_bram_0_synth_1/design_1_lmb_bram_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_lmb_bram_0, cache-ID = 4cf522232b7ba247
+INFO: [Coretcl 2-1174] Renamed 46 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3382.422 ; gain = 0.000 ; free physical = 452514 ; free virtual = 490970
+INFO: [Common 17-1381] The checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_lmb_bram_0_synth_1/design_1_lmb_bram_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_lmb_bram_0_utilization_synth.rpt -pb design_1_lmb_bram_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 28 13:46:55 2024...

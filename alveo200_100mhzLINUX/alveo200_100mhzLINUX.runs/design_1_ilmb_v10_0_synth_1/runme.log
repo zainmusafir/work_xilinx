@@ -1,0 +1,228 @@
+
+*** Running vivado
+    with args -log design_1_ilmb_v10_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ilmb_v10_0.tcl
+
+
+****** Vivado v2023.2.2 (64-bit)
+  **** SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
+  **** IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+  **** SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_ilmb_v10_0.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1336.500 ; gain = 38.836 ; free physical = 481204 ; free virtual = 519620
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_ilmb_v10_0
+Command: synth_design -top design_1_ilmb_v10_0 -part xcu200-fsgd2104-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu200'
+INFO: [Device 21-403] Loading part xcu200-fsgd2104-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2670289
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2817.105 ; gain = 392.684 ; free physical = 454882 ; free virtual = 493299
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/synth/design_1_ilmb_v10_0.vhd:89]
+	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_v10' declared at '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ipshared/ae24/hdl/lmb_v10_v3_0_vh_rfs.vhd:91' bound to instance 'U0' of component 'lmb_v10' [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/synth/design_1_ilmb_v10_0.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'lmb_v10' [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ipshared/ae24/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-3491] module 'FDS' declared at '/cm/shared/apps/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:41128' bound to instance 'POR_FF_I' of component 'FDS' [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ipshared/ae24/hdl/lmb_v10_v3_0_vh_rfs.vhd:170]
+INFO: [Synth 8-6157] synthesizing module 'FDS' [/cm/shared/apps/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:41128]
+INFO: [Synth 8-6155] done synthesizing module 'FDS' (0#1) [/cm/shared/apps/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:41128]
+INFO: [Synth 8-256] done synthesizing module 'lmb_v10' (0#1) [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ipshared/ae24/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_v10_0' (0#1) [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/synth/design_1_ilmb_v10_0.vhd:89]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2897.074 ; gain = 472.652 ; free physical = 453848 ; free virtual = 492267
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2911.918 ; gain = 487.496 ; free physical = 453820 ; free virtual = 492239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2911.918 ; gain = 487.496 ; free physical = 453820 ; free virtual = 492239
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2925.855 ; gain = 0.000 ; free physical = 453736 ; free virtual = 492159
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_ilmb_v10_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_ilmb_v10_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2953.762 ; gain = 0.000 ; free physical = 452134 ; free virtual = 490560
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  FDS => FDSE: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2953.797 ; gain = 0.000 ; free physical = 452104 ; free virtual = 490531
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2953.797 ; gain = 529.375 ; free physical = 451656 ; free virtual = 490120
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu200-fsgd2104-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2953.797 ; gain = 529.375 ; free physical = 451653 ; free virtual = 490118
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_ilmb_v10_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2953.797 ; gain = 529.375 ; free physical = 451653 ; free virtual = 490117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2953.797 ; gain = 529.375 ; free physical = 451654 ; free virtual = 490095
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 6840 (col length:120)
+BRAMs: 4320 (col length: RAMB18 360 RAMB36 180)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2953.797 ; gain = 529.375 ; free physical = 451536 ; free virtual = 489980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 3243.652 ; gain = 819.230 ; free physical = 449904 ; free virtual = 488350
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 3243.652 ; gain = 819.230 ; free physical = 449903 ; free virtual = 488349
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 3253.668 ; gain = 829.246 ; free physical = 449876 ; free virtual = 488322
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3269.512 ; gain = 845.090 ; free physical = 448896 ; free virtual = 487342
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3269.512 ; gain = 845.090 ; free physical = 448895 ; free virtual = 487342
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3269.512 ; gain = 845.090 ; free physical = 448895 ; free virtual = 487341
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3269.512 ; gain = 845.090 ; free physical = 448893 ; free virtual = 487340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3269.512 ; gain = 845.090 ; free physical = 448893 ; free virtual = 487340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3269.512 ; gain = 845.090 ; free physical = 448892 ; free virtual = 487338
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |FDS  |     1|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3269.512 ; gain = 845.090 ; free physical = 448891 ; free virtual = 487337
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3269.512 ; gain = 803.211 ; free physical = 448885 ; free virtual = 487331
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3269.520 ; gain = 845.090 ; free physical = 448885 ; free virtual = 487331
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3269.520 ; gain = 0.000 ; free physical = 448882 ; free virtual = 487329
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3344.465 ; gain = 0.000 ; free physical = 449032 ; free virtual = 487479
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  FDS => FDSE: 1 instance 
+
+Synth Design complete | Checksum: 67f9ee0e
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 3344.500 ; gain = 1960.609 ; free physical = 449523 ; free virtual = 487969
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2633.297; main = 2412.509; forked = 296.258
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4219.281; main = 3344.469; forked = 965.609
+INFO: [Common 17-1381] The checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_ilmb_v10_0_synth_1/design_1_ilmb_v10_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_ilmb_v10_0, cache-ID = 2a9323e2a1c6ec54
+INFO: [Common 17-1381] The checkpoint '/work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_ilmb_v10_0_synth_1/design_1_ilmb_v10_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_ilmb_v10_0_utilization_synth.rpt -pb design_1_ilmb_v10_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 28 13:46:46 2024...

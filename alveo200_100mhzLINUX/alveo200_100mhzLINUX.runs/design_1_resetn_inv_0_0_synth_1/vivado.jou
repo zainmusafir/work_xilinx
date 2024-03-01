@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Wed Feb 28 13:46:04 2024
+# Process ID: 2670143
+# Current directory: /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_resetn_inv_0_0_synth_1
+# Command line: vivado -log design_1_resetn_inv_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_resetn_inv_0_0.tcl
+# Log file: /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_resetn_inv_0_0_synth_1/design_1_resetn_inv_0_0.vds
+# Journal file: /work/zain/Xilinx/alveo200_100mhzLINUX/alveo200_100mhzLINUX.runs/design_1_resetn_inv_0_0_synth_1/vivado.jou
+# Running On: n019, OS: Linux, CPU Frequency: 2650.000 MHz, CPU Physical cores: 32, Host memory: 540859 MB
+#-----------------------------------------------------------
+source design_1_resetn_inv_0_0.tcl -notrace
